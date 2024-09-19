@@ -1,0 +1,14 @@
+﻿@page
+@model ItemsModel
+@{
+    ViewData["Title"] = "Items List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<ul>
+    @foreach (var item in Model.Items)
+    {
+        <li>@item</li>
+    }
+</ul>

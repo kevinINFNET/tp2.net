@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo</h1>
+    <p>Saiba mais sobre <a href="https://learn.microsoft.com/aspnet/core">a construção de aplicativos web com ASP.NET Core</a>.</p>
+</div>
+<component type="typeof(HelloRazorComponent)" render-mode="Static" />
+<p>Clique abaixo para ir para a página do formulário:</p>
+<a asp-page="/FormPage" class="btn btn-primary">Formulário</a>

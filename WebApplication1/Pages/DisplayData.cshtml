@@ -1,0 +1,14 @@
+﻿@page
+@model DisplayDataModel
+@{
+    ViewData["Title"] = "Display Data";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<ul>
+    @foreach (var line in Model.Lines)
+    {
+        <li>@line</li>
+    }
+</ul>
